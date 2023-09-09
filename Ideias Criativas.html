@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% set bodyId= "page-ideas" %}
+
+
+{% block title %}
+<title>Ideias- Avanço da Tecnologia</title> 
+{% endblock title %}
+
+
+   
+
+
+
+ {% block content %}
+    <header>
+        <a href="/"></a>
+        <img src="https://cdn-icons-png.flaticon.com/128/11517/11517973.png" alt="Informações Atualizadas">
+        <nav>
+        <li><a href="#">Recursos & Ferramentas</a></li>
+        <li><a href="/">Início</a></li>
+        <li><a href="https://www.linkedin.com/in/lucas-alves-2725001b2">Linkendin</a></li>
+        <li><a href="https://www.bing.com/search?form=NTPCHT&showconv=1&sendquery=1&q=bing">Chat Gpt</a></li>
+        </nav>
+    </header>
+    <section id="title">
+     <p>Em Exibição </p>
+     <h1>Desenvolver Ferramentas Web</h1>
+    </section>
+    <main>
+    
+   
+    <section id="ideas">
+    {% include "all_ideas.html" %}
+    </section>
+    </main>
+    <footer>
+        Com 💞<a href="http://rocketseat.com.br" target="_blank">Rocketseat</a>
+     </footer>
+     {% endblock %}

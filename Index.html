@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section id="intro">
+
+    <header>
+    <h1>Meio Tecnológico</h1>
+    <a href="/"> 
+    <img src="/image/logo.png2.png" alt="Logomarca do computador">
+   </a>
+    </header>
+     
+    <main>
+       <p>
+           Desenvolvimento tecnológico é o processo de <strong> criação, inovação e aplicação de novas tecnologias</strong> 
+           para melhorar ou revolucionar as condições de vida e trabalho.
+       </p>
+   
+       <p>A evolução histórica da tecnologia tem início nas primeiras invenções do homem. 
+       Ao longo do tempo o ser humano desenvolveu ferramentas de caça, descobriu o 
+       fogo, criou a roda para ajudar na locomoção, tudo com o intuito de tornar a vida
+        mais fácil.
+       </p>
+          
+       <p>
+           As redes sociais, as ferramentas de comunicação digital, o uso de aplicativos 
+           resolvem quase todos os problemas do dia a dia. 
+           Ligar para a pizzaria, abanar a mão para pedir um táxi, ir ao banco pagar as contas, tudo isso já está ultrapassado.
+       </p>
+    </main>
+
+      
+       
+   
+       <section id="buttons"> 
+        <a href="https://forms.gle/vFecVnjmaQvHGXU4A" class="button"> Adicionar Ideia</a>
+        <a href="/Ideias" class="button">Ver Ideia</a>
+       </section>
+    <footer>
+       Com 💞<a href="http://rocketseat.com.br" target="_blank">Rocketseat</a>
+    </footer>
+   </section>
+   
+
+   <section id="Last-ideias">
+       {%include "all_ideas.html" %}
+   </section>
+   
+{% endblock %}
